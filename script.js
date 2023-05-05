@@ -1,6 +1,6 @@
 let center = document.querySelector('.center')
 
-let celBodies = 125;
+let celBodies = 200;
 
 for (let i = 0; i < celBodies; i++) {
     let targetEl = document.createElement('span');
@@ -18,8 +18,8 @@ spans.forEach(el => {
     el.style.height = `${randHeight}px`
     el.style.width = `${randWidth}px`
 
-    let revolutionTimer = Math.round(Math.random() * 50000 +25000)
-    let delay = Math.round(Math.random() * 50000)
+    let revolutionTimer = Math.round(Math.random() * 50000 + 50000)
+    let delay = Math.round(Math.random() * 75000)
 
     el.style.animationDuration = `${revolutionTimer}ms`;
     el.style.animationDelay = `-${delay}ms`;
