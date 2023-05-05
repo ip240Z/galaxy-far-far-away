@@ -25,7 +25,7 @@ spans.forEach(el => {
     el.style.animationDelay = `-${delay}ms`;
 
     const node = document.createElement('div');
-    const divRadius = Math.random() * 5 + 2;
+    const divRadius = Math.floor(Math.random() * 3 + 1);
 
     node.style.height = `${divRadius}px`
     node.style.width = `${divRadius}px`
